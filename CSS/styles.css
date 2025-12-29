@@ -4,8 +4,8 @@
   --fuente-prinipal: "Roboto", sans-serif;
   --color-svg: #125aea;
   --color-border: #1b3c6e;
-  --color-secundario: #1250CF;
-  --bg-border: #101C36;
+  --color-secundario: #1250cf;
+  --bg-border: #101c36;
 }
 html {
   box-sizing: border-box; /*El box-sizing es para que el padding no afecte el ancho de los elementos*/
@@ -80,7 +80,7 @@ a:hover {
 @media (min-width: 391px) {
   .contenedor {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .logo {
@@ -105,14 +105,14 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
 }
 .legend {
-  font-weight:800;
+  font-weight: 800;
   color: var(--color-secundario);
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-size: 1.2rem;
-  width: fit-content;  /* Ajusta el ancho al contenido */
+  width: fit-content; /* Ajusta el ancho al contenido */
   border-radius: 10px;
-  background-color: var(--bg-border)
+  background-color: var(--bg-border);
 }
 
 .imagen {
