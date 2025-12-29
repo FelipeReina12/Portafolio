@@ -3,6 +3,7 @@
   --color-heading: #ffffff;
   --fuente-prinipal: "Roboto", sans-serif;
   --color-svg: #125aea;
+  --color-border: #1b3c6e;
 }
 html {
   box-sizing: border-box; /*El box-sizing es para que el padding no afecte el ancho de los elementos*/
@@ -55,7 +56,7 @@ body {
   width: 100%;
   padding: 2rem;
   align-items: center;
-  border-bottom: #1b3c6e 2px solid;
+  border-bottom: var(--color-border) 2px solid;
 }
 .logo {
   display: flex;
