@@ -102,22 +102,44 @@ a:hover {
 .hero {
   margin-top: 15rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 0 20rem;
+
 }
 .legend {
   font-weight: 800;
   color: var(--color-secundario);
   padding: 0.5rem 1rem;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: fit-content; /* Ajusta el ancho al contenido */
   border-radius: 10px;
   background-color: var(--bg-border);
+  
 }
-
+.contenido h1 {
+  font-size: 8rem;
+}
+.contenido span {
+  font-size: 8rem; 
+  font-weight: 800;
+  background: linear-gradient(to right, #3b82f6, #9333ea, #4b5563);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenido p {
+  width: 80%;
+  font-size: 1.8rem;
+  color: var(--color-heading);
+  text-align:initial;
+  line-height: 1.3;
+}
 .imagen {
   background-image: url(/IMG/plc.jpg);
   height: 400px;
   background-size: 350px;
   background-repeat: no-repeat;
+  width: 350px;
 }
