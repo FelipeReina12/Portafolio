@@ -6,6 +6,7 @@
   --color-border: #1b3c6e;
   --color-secundario: #1250cf;
   --bg-border: #101c36;
+  --contacto: #7a879c;
 }
 html {
   box-sizing: border-box; /*El box-sizing es para que el padding no afecte el ancho de los elementos*/
@@ -27,7 +28,6 @@ h6 {
   margin: 0;
   font-size: 2.2rem;
 }
-
 a {
   text-decoration: none;
   color: var(--color-heading);
@@ -37,6 +37,9 @@ a {
 }
 body {
   font-family: var(--fuente-prinipal);
+  margin: 0;  /* Elimina el margen por defecto del body */
+  display: flex;
+  flex-direction: column;  /* Para que el footer se mantenga al final */
   /* Fondo con degradado radial */
   background-color: #0a1628;
   background-image: radial-gradient(
@@ -70,7 +73,7 @@ body {
 .navegacion__direccion {
   display: block;
   text-align: center;
-  padding-bottom: 1rem;
+  font-weight: bold;
 }
 a:hover {
   color: var(--color-svg);
@@ -80,7 +83,7 @@ a:hover {
 @media (min-width: 391px) {
   .contenedor {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   .logo {
@@ -102,27 +105,53 @@ a:hover {
 .hero {
   margin-top: 15rem;
   display: grid;
+  grid-auto-flow: column; /*Es para que los elementos se coloquen en columnas y evitar que se creen rows*/
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 0 20rem;
-
+  flex: 1; /* Ocupa el espacio disponible y empuja el footer al fondo */
+}
+.contacto {
+  display: grid;
+  grid-row: 2/3;
+  justify-self: baseline;
+  margin-top: -4rem;
+}
+.contacto h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--contacto);
+  margin-bottom: 1rem;
+}
+.redes {
+  display: flex;
+  gap: 2rem;
+}
+.redes svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem; /* Tamaño del círculo */
+  height: 6rem;
+  background-color: var(--bg-border);
+  border-radius: 50%;
+  padding: 1rem; /* Espacio interno */
 }
 .legend {
   font-weight: 800;
   color: var(--color-secundario);
   padding: 0.5rem 1rem;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 2rem;
   width: fit-content; /* Ajusta el ancho al contenido */
   border-radius: 10px;
   background-color: var(--bg-border);
-  
 }
 .contenido h1 {
   font-size: 8rem;
 }
 .contenido span {
-  font-size: 8rem; 
+  font-size: 8rem;
   font-weight: 800;
   background: linear-gradient(to right, #3b82f6, #9333ea, #4b5563);
   -webkit-background-clip: text;
@@ -133,7 +162,7 @@ a:hover {
   width: 80%;
   font-size: 1.8rem;
   color: var(--color-heading);
-  text-align:initial;
+  text-align: initial;
   line-height: 1.4;
 }
 .imagen {
@@ -142,4 +171,24 @@ a:hover {
   background-size: 350px;
   background-repeat: no-repeat;
   width: 350px;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  border-bottom: none;
+  border-top: var(--color-border) 2px solid;
+  margin-top: 10rem;
+  padding: 3rem 0;
+  padding-right: 10rem;
+}
+.footer h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 18rem;
+}
+.footer .navegacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
