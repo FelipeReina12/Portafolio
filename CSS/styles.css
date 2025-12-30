@@ -37,9 +37,9 @@ a {
 }
 body {
   font-family: var(--fuente-prinipal);
-  margin: 0;  /* Elimina el margen por defecto del body */
+  margin: 0; /* Elimina el margen por defecto del body */
   display: flex;
-  flex-direction: column;  /* Para que el footer se mantenga al final */
+  flex-direction: column; /* Para que el footer se mantenga al final */
   /* Fondo con degradado radial */
   background-color: #0a1628;
   background-image: radial-gradient(
@@ -89,6 +89,7 @@ a:hover {
   .logo {
     gap: 2rem;
     padding-bottom: 0;
+    margin-left: -5rem;
   }
   .navegacion {
     display: flex;
@@ -103,7 +104,7 @@ a:hover {
 
 /* Main */
 .hero {
-  margin-top: 15rem;
+  margin-top: 12rem;
   display: grid;
   grid-auto-flow: column; /*Es para que los elementos se coloquen en columnas y evitar que se creen rows*/
   grid-template-columns: 1fr 1fr;
@@ -168,9 +169,16 @@ a:hover {
 .imagen {
   background-image: url(/IMG/plc.jpg);
   height: 400px;
-  background-size: 350px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 350px;
+  border-radius: 20px;
+  border: 3px solid var(--color-svg);
+  overflow: hidden;
+}
+.texto .legend {
+  margin-top: 2rem;
 }
 
 /*footer*/
@@ -178,17 +186,21 @@ a:hover {
   width: 100%;
   border-bottom: none;
   border-top: var(--color-border) 2px solid;
-  margin-top: 10rem;
+  margin-top: 7rem;
   padding: 3rem 0;
-  padding-right: 10rem;
 }
 .footer h3 {
   font-weight: 400;
   font-size: 1.5rem;
   margin-left: 18rem;
+  margin-left: 2rem;
 }
-.footer .navegacion {
+.footer .navegacion__footer {
   display: flex;
-  justify-content: space-around;
+  gap: 4rem;
+  justify-content: space-between;
   align-items: center;
+}
+.navegacion__footer {
+  margin-right: 5rem;
 }
