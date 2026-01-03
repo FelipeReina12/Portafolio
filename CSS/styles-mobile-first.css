@@ -38,7 +38,7 @@ a {
     text-decoration: none;
     color: var(--color-heading);
     font-family: var(--fuente-prinipal);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
 }
 
@@ -101,7 +101,7 @@ body {
     color: var(--color-secundario);
     padding: 0.5rem 1rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: fit-content;
     /* Ajusta el ancho al contenido */
     border-radius: 10px;
@@ -126,7 +126,7 @@ body {
 .contenido p {
     margin: 1rem auto;
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--color-heading);
     text-align: justify;
     line-height: 1.4;
