@@ -193,8 +193,10 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-left: 3rem;
   }
   .navegacion {
+    margin-right: 3rem;
     display: flex;
     gap: 2rem;
     align-items: center;
