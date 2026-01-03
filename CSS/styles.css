@@ -177,58 +177,68 @@ a:hover {
     margin-bottom: 1rem;
   }
 }
-
+/*Tablet y pantallas medianas*/
 @media (min-width: 768px) {
+  .hero > *:nth-child(1) {
+    margin-left: -none;
+  }
   .hero {
-    margin-top: 12rem;
+    margin-top: 8rem;
     display: grid;
     grid-auto-flow: column; /*Es para que los elementos se coloquen en columnas y evitar que se creen rows*/
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    padding: 0 20rem;
+    padding: 0 4rem;
     flex: 1; /* Ocupa el espacio disponible y empuja el footer al fondo */
   }
   .contacto {
     display: grid;
     grid-row: 2/3;
-    justify-self: baseline;
-    margin-top: -8rem;
+    justify-self: start;
+    margin-top: -6rem;
+    gap: 4rem;
+    margin-top: -28rem;
   }
   .contacto h3 {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--contacto);
     margin-bottom: 1rem;
+    margin-left: none;
   }
   .redes {
     display: flex;
     gap: 2rem;
+    margin-top: -9rem;
+    margin-left: none;
   }
   .redes svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 6rem; /* Tamaño del círculo */
-    height: 6rem;
+    width: 5rem; /* Tamaño del círculo */
+    height: 5rem;
     background-color: var(--bg-border);
     border-radius: 50%;
     padding: 1rem; /* Espacio interno */
+    margin-top: -10rem;
+
   }
   .legend {
     font-weight: 800;
     color: var(--color-secundario);
     padding: 0.5rem 1rem;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: fit-content; /* Ajusta el ancho al contenido */
     border-radius: 10px;
     background-color: var(--bg-border);
   }
   .contenido h1 {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .contenido span {
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 800;
     background: linear-gradient(to right, #3b82f6, #9333ea, #4b5563);
     -webkit-background-clip: text;
@@ -236,8 +246,8 @@ a:hover {
     -webkit-text-fill-color: transparent;
   }
   .contenido p {
-    width: 80%;
-    font-size: 1.8rem;
+    width: 90%;
+    font-size: 1.6rem;
     color: var(--color-heading);
     text-align: initial;
     line-height: 1.4;
@@ -255,6 +265,45 @@ a:hover {
   }
   .texto .legend {
     margin-top: 2rem;
+  }
+}
+
+/*Pantallas grandes*/
+@media (min-width: 1200px) {
+  .hero > *:nth-child(1) {
+    margin-left: 10rem;
+  }
+  .hero {
+    margin-top: 12rem;
+    padding: 0 15rem;
+    gap: 6rem;
+  }
+  .contacto {
+    margin-top: -18rem;
+  }
+  .contacto h3 {
+    margin-left: 10rem;
+  }
+  .redes {
+    margin-left: 9rem;
+  }
+  .redes svg {
+    width: 6rem; /* Tamaño del círculo */
+    height: 6rem;
+    margin-top: -1rem;
+  }
+  .legend {
+    font-size: 2rem;
+  }
+  .conteido h1 {
+    font-size: 8rem;
+  }
+  .contenido span {
+    font-size: 8rem;
+  }
+  .contenido p {
+    font-size: 1.8rem;
+    width: 80%;
   }
 }
 
