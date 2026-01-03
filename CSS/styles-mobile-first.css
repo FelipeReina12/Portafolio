@@ -184,6 +184,7 @@ body {
 /* Header */
 @media (min-width: 768px) {
   .contenedor {
+    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
