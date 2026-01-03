@@ -1,156 +1,177 @@
 :root {
-  --color-primario: #101621;
-  --color-heading: #ffffff;
-  --fuente-prinipal: "Roboto", sans-serif;
-  --color-svg: #125aea;
-  --color-border: #1b3c6e;
-  --color-secundario: #1250cf;
-  --bg-border: #101c36;
-  --contacto: #7a879c;
+    --color-primario: #101621;
+    --color-heading: #ffffff;
+    --fuente-prinipal: "Roboto", sans-serif;
+    --color-svg: #125aea;
+    --color-border: #1b3c6e;
+    --color-secundario: #1250cf;
+    --bg-border: #101c36;
+    --contacto: #7a879c;
 }
+
 html {
-  box-sizing: border-box; /*El box-sizing es para que el padding no afecte el ancho de los elementos*/
-  font-size: 62.5%; /*Para que 1 rem = a 10px*/
+    box-sizing: border-box;
+    /*El box-sizing es para que el padding no afecte el ancho de los elementos*/
+    font-size: 62.5%;
+    /*Para que 1 rem = a 10px*/
 }
+
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--color-heading);
-  font-family: var(--fuente-prinipal);
-  margin: 0;
-  font-size: 2.2rem;
+    color: var(--color-heading);
+    font-family: var(--fuente-prinipal);
+    margin: 0;
+    font-size: 2.2rem;
 }
+
 a {
-  text-decoration: none;
-  color: var(--color-heading);
-  font-family: var(--fuente-prinipal);
-  font-size: 1.5rem;
-  font-weight: 400;
+    text-decoration: none;
+    color: var(--color-heading);
+    font-family: var(--fuente-prinipal);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
+
 a:hover {
-  color: var(--color-svg);
-  transition: all 0.3s ease-in-out;
+    color: var(--color-svg);
+    transition: all 0.3s ease-in-out;
 }
+
 body {
-  font-family: var(--fuente-prinipal);
-  margin: 0; /* Elimina el margen por defecto del body */
-  display: flex;
-  flex-direction: column; /* Para que el footer se mantenga al final */
-  /* Fondo con degradado radial */
-  background-color: #0a1628;
-  background-image: radial-gradient(
-      circle at top right,
-      rgba(59, 130, 246, 0.25),
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at bottom left,
-      rgba(109, 40, 217, 0.2),
-      transparent 40%
-    );
-  min-height: 100vh;
-  /* Fondo con degradado radial */
+    font-family: var(--fuente-prinipal);
+    margin: 0;
+    /* Elimina el margen por defecto del body */
+    display: flex;
+    flex-direction: column;
+    /* Para que el footer se mantenga al final */
+    /* Fondo con degradado radial */
+    background-color: #0a1628;
+    background-image: radial-gradient(circle at top right,
+            rgba(59, 130, 246, 0.25),
+            transparent 40%),
+        radial-gradient(circle at bottom left,
+            rgba(109, 40, 217, 0.2),
+            transparent 40%);
+    min-height: 100vh;
+    /* Fondo con degradado radial */
 }
+
 /* Header */
 .contenedor {
-  background-color: var(--color-primario);
-  margin: 0 auto;
-  padding: 1rem;
+    background-color: var(--color-primario);
+    margin: 0 auto;
+    padding: 1rem;
 }
+
 .logo {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
+
 .navegacion__direccion {
-  display: block;
-  text-align: center;
-  margin-top: 0.7rem;
+    display: block;
+    text-align: center;
+    margin-top: 0.7rem;
 }
+
 .navegacion__direccion:last-child {
-  margin-bottom: none;
+    margin-bottom: none;
 }
 
 /* main */
 .hero {
-  text-align: center;
-  padding: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
 }
+
 .legend {
-  margin: 0 auto;
-  font-weight: 800;
-  color: var(--color-secundario);
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  width: fit-content; /* Ajusta el ancho al contenido */
-  border-radius: 10px;
-  background-color: var(--bg-border);
-  margin-bottom: 1rem;
+    margin: 0 auto;
+    font-weight: 800;
+    color: var(--color-secundario);
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    width: fit-content;
+    /* Ajusta el ancho al contenido */
+    border-radius: 10px;
+    background-color: var(--bg-border);
+    margin-bottom: 1rem;
 }
+
 .contenido h1 {
-  text-align: center;
-  font-size: 2.5rem;
+    text-align: center;
+    font-size: 3.5rem;
 }
+
 .contenido span {
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: linear-gradient(to right, #3b82f6, #9333ea, #4b5563);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #3b82f6, #9333ea, #4b5563);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .contenido p {
-  margin: 1rem auto;
-  width: 71%;
-  font-size: 1.2rem;
-  color: var(--color-heading);
-  text-align: justify;
-  line-height: 1.4;
-  margin-bottom: 2rem;
+    margin: 1rem auto;
+    width: 90%;
+    font-size: 1.2rem;
+    color: var(--color-heading);
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 2rem;
 }
+
 .contacto h3 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--contacto);
-  margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--contacto);
+    margin-bottom: 1rem;
 }
+
 .meta {
-  margin: 0 auto;
-  padding: 1.5rem;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
+
 .imagen {
-  margin: 0 auto;
-  max-width: 90%;
-  margin-top: 2rem;
-  background-image: url(/IMG/plc.jpg);
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 350px;
-  border-radius: 20px;
-  border: 3px solid var(--color-svg);
-  overflow: hidden;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: 2rem;
+    background-image: url(/IMG/plc.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    border-radius: 20px;
+    border: 3px solid var(--color-svg);
+    overflow: hidden;
 }
+
 .legend--proyectos {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 /* footer */
 .footer {
-  width: 100%;
+    width: 100%;
 }
+
 .footer h3 {
-  margin: 1rem auto 0 auto;
-  font-weight: 400;
-  font-size: 1.2rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
