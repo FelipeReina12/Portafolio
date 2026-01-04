@@ -56,16 +56,12 @@ body {
   /* Para que el footer se mantenga al final */
   /* Fondo con degradado radial */
   background-color: #0a1628;
-  background-image: radial-gradient(
-      circle at top right,
+  background-image: radial-gradient(circle at top right,
       rgba(59, 130, 246, 0.25),
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at bottom left,
+      transparent 40%),
+    radial-gradient(circle at bottom left,
       rgba(109, 40, 217, 0.2),
-      transparent 40%
-    );
+      transparent 40%);
   min-height: 100vh;
   /* Fondo con degradado radial */
 }
@@ -153,7 +149,8 @@ body {
   margin: 0 auto;
   max-width: 90%;
   margin-top: 2rem;
-  background-image: url(../img/plc.jpg); /* Añadiendo imagen */
+  background-image: url(../img/plc.jpg);
+  /* Añadiendo imagen */
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -181,7 +178,7 @@ body {
 }
 
 /* Media Queries */
-/* Header */
+/* header */
 @media (min-width: 768px) {
   .contenedor {
     display: flex;
@@ -189,22 +186,131 @@ body {
     align-items: center;
     gap: 2rem;
   }
+
   .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-left: 3rem;
   }
+
   .navegacion {
     margin-right: 3rem;
     display: flex;
     gap: 2rem;
     align-items: center;
   }
+
   .navegacion__direccion {
     display: inline;
     text-align: left;
     margin-top: 0;
     margin: 0;
   }
+
+  /* main */
+  .hero {
+    margin-top: 6rem;
+    display: grid;
+    grid-auto-flow: column;
+    /*para que los elementos se coloquen en columnas*/
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    flex: 1;
+    /* Ocupa el espacio disponible y empuja el footer al fondo */
+    margin-left: 5rem;
+  }
+
+  .contacto {
+    display: grid;
+    grid-row: 2/3;
+    justify-self: start;
+    gap: 4rem;
+    margin-top: -26rem;
+  }
+
+  .contacto h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--contacto);
+    margin-left: -3rem;
+
+  }
+
+  .redes {
+    display: flex;
+    margin-top: -9rem;
+    margin-left: 3rem;
+  }
+
+  .redes svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    /* Tamaño del círculo */
+    height: 5rem;
+    background-color: var(--bg-border);
+    border-radius: 50%;
+    padding: 1rem;
+    /* Espacio interno */
+    margin-top: -4rem;
+  }
+
+  .legend {
+    font-weight: 800;
+    color: var(--color-secundario);
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: fit-content;
+    /* Ajusta el ancho al contenido */
+    border-radius: 10px;
+    background-color: var(--bg-border);
+  }
+
+  .contenido h1 {
+    font-size: 8rem;
+  }
+
+  .contenido span {
+    font-size: 8rem;
+  }
+
+  .contenido {
+    margin-bottom: 5rem;
+  }
+
+  .contenido p {
+    font-size: 1.8rem;
+    width: 80%;
+    margin-bottom: 25rem;
+  }
+/* footer */
+  .footer h3 {
+    font-size: 1.6rem;
+    margin-right: 3rem;
+  }
+  
+  .navegacion__footer {
+    display: flex;
+    gap: 2rem;
+    margin-left: 3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
