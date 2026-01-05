@@ -219,6 +219,7 @@ body {
     flex: 1;
     /* Ocupa el espacio disponible y empuja el footer al fondo */
     margin-left: 5rem;
+    margin-bottom: -6rem;
   }
 
   .contacto {
