@@ -11,6 +11,7 @@
   --color-card: #192233;
   --color-btn-primario: #135BEC;
   --bg-card-habilidades: #172C56;
+  --color-herramientas: #0F1521;
 }
 
 html {
@@ -196,9 +197,10 @@ body {
 }
 
 .titulo h4 {
-  color: var(--color-sobre-mi);
+  color: var(--color-svg);
   font-size: 2rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  font-weight: revert-layer;
 }
 
 .titulo h1 {
@@ -281,7 +283,6 @@ body {
 
 .intereses {
   margin-top: 2rem;
-  margin-bottom: 2rem;
   background-color: var(--bg-border);
   padding: 5rem 0;
 }
@@ -332,12 +333,61 @@ body {
   margin: 1rem 0;
 }
 
+.herramientas {
+  background-color: var(--color-herramientas);
+  padding: 3rem 0;
+}
 
+.herramientas h4 {
+  text-align: center;
+  color: var(--contacto);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
 
+.herramientas__iconos p {
+  color: var(--color-heading);
+  font-size: 1.5rem;
+}
 
+.herramientas__iconos svg {
+  width: 100%;
+  height: auto;
+  width: 4rem;
+}
 
+.herramientas__iconos {
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+}
 
+.btn-primario--footer {
+  width: 40%;
+  padding: 0.2rem;
 
+}
+
+.btn-primario--footer p{
+  width: 100%;
+  text-align: center;
+  margin: 0.8rem auto;
+
+}
+
+.footer__contacto {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer__contacto svg {
+  width: 100%;
+  height: auto;
+  width: 4rem;
+}  
 
 
 
