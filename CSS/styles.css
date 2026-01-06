@@ -9,9 +9,9 @@
   --contacto: #7a879c;
   --color-sobre-mi: #1150d2;
   --color-card: #192233;
-  --color-btn-primario: #135BEC;
-  --bg-card-habilidades: #172C56;
-  --color-herramientas: #0F1521;
+  --color-btn-primario: #135bec;
+  --bg-card-habilidades: #172c56;
+  --color-herramientas: #0f1521;
 }
 
 html {
@@ -189,7 +189,8 @@ body {
 /* Sobre mi */
 .principal {
   width: 90%;
-  margin: 0 auto; /* Para que no llegue a las orillas */
+  margin: 0 auto;
+  /* Para que no llegue a las orillas */
 }
 
 .titulo {
@@ -222,6 +223,7 @@ body {
   line-height: 1.4;
   margin-bottom: 2rem;
 }
+
 .foto {
   margin: 0 auto;
   background-image: url(../img/yo.jpg);
@@ -289,13 +291,15 @@ body {
 
 .intereses h1 {
   width: 90%;
-  margin: 0 auto; /* Para que no llegue a las orillas */
+  margin: 0 auto;
+  /* Para que no llegue a las orillas */
   margin-bottom: 1rem;
 }
 
 .intereses p {
   width: 90%;
-  margin: 0 auto; /* Para que no llegue a las orillas */
+  margin: 0 auto;
+  /* Para que no llegue a las orillas */
   color: var(--contacto);
   font-size: 1.5rem;
   line-height: 1.4;
@@ -308,21 +312,24 @@ body {
   padding: 2rem;
 }
 
-.card__icono{
+.card__icono {
   background-color: var(--bg-card-habilidades);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6rem;  /* Tamaño del círculo */
+  width: 6rem;
+  /* Tamaño del círculo */
   height: 6rem;
-  border-radius: 50%; /* Fondo circular */
-  padding: 0.7rem; /* Espacio interno */
+  border-radius: 50%;
+  /* Fondo circular */
+  padding: 0.7rem;
+  /* Espacio interno */
   margin-bottom: 1rem;
-
 }
 
 .card__icono svg {
-  width: 3rem;  /* Tamaño del icono */
+  width: 3rem;
+  /* Tamaño del icono */
   height: 3rem;
 }
 
@@ -365,14 +372,12 @@ body {
 .btn-primario--footer {
   width: 40%;
   padding: 0.2rem;
-
 }
 
-.btn-primario--footer p{
+.btn-primario--footer p {
   width: 100%;
   text-align: center;
   margin: 0.8rem auto;
-
 }
 
 .footer__contacto {
@@ -387,85 +392,7 @@ body {
   width: 100%;
   height: auto;
   width: 4rem;
-}  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* Media Queries */
 /* header */
@@ -576,6 +503,7 @@ body {
     width: 80%;
     margin-bottom: 25rem;
   }
+
   /* footer */
   .footer h3 {
     font-size: 1.6rem;
@@ -586,5 +514,145 @@ body {
     display: flex;
     gap: 2rem;
     margin-left: 3rem;
+  }
+
+  /* Sobre mi */
+  .contenedor {
+    border-bottom: 3px solid var(--bg-border);
+  }
+
+  .titulo h4 {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+
+  .titulo h1,
+  .titulo span {
+    font-size: 6rem;
+  }
+
+  .contenido-sobre-mi p {
+    font-size: 1.9rem;
+  }
+
+  .principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row; /*para que los elementos se coloquen en filas*/
+    
+  }
+
+  .contenido-sobre-mi {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/3;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .contenido-sobre-mi p {
+    grid-column: 1/2;
+    margin-top: -6rem;
+    line-height: 1.8;
+  }
+
+  .contenido-sobre-mi .foto {
+    grid-column: 2/3;
+  }
+
+  .foto {
+    margin: 0 auto;
+    background-image: url(../img/yo.jpg);
+    width: 285px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 3px solid var(--color-svg);
+    overflow: hidden;
+  }
+
+  .datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .datos__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .card h3 {
+    font-size: 3rem;
+  }
+
+  .card p {
+    font-size: 1.7rem;
+  }
+
+  .card__años,
+  .card__proyectos,
+  .card__compromiso {
+    margin-left: 7.2rem;
+    width: 90%;
+  }
+
+  .botones {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: start;
+    margin-top: 4rem;
+    margin-left: 7.2rem;
+  }
+
+  .intereses h1 {
+    font-size: 4rem;
+  }
+
+  .intereses p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .habilidades {
+    display: flex;
+    gap: 6rem;
+    margin: 0 7rem;
+  }
+
+  .card--habilidades {
+    width: 25%;
+  }
+
+  .herramientas {
+    border: 2px solid var(--bg-border);
+    padding: 6rem;
+  }
+
+  .herramientas__iconos {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+  }
+  
+  .orden {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .footer h3 {
+    margin-left: 6rem;
+  }
+
+  .footer__contacto {
+    width: 20%;
+    gap: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 0;
   }
 }
