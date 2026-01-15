@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="titulo">
         <div class="contenedor">
             <div class="logo">
                 <a href="index.html">
@@ -33,7 +33,7 @@
             <nav class="navegacion">
                 <a class="navegacion__direccion" href="#">Inicio</a>
                 <a class="navegacion__direccion" href="./sobre_mi.html">Sobre mi</a>
-                <a class="navegacion__direccion" href="#">Proyectos</a>
+                <a class="navegacion__direccion" href="./proyectos.html">Proyectos</a>
                 <a class="navegacion__direccion" href="#">Habilidades</a>
                 <a class="navegacion__direccion" href="#">Contacto</a>
             </nav>
@@ -98,17 +98,24 @@
         </section>
     </main>
     <footer class="footer contenedor">
-
-        <nav class="navegacion__footer">
-            <a class="navegacion__direccion" href="#">Inicio</a>
-            <a class="navegacion__direccion" href="./sobre_mi.html">sobre mi</a>
-            <a class="navegacion__direccion" href="#">Proyectos</a>
-            <a class="navegacion__direccion" href="#">Habilidades</a>
-            <a class="navegacion__direccion" href="#">Contacto</a>
-        </nav>
         <h3>
             &copy; 2026 Juan Felipe Reina Dev - Todos los derechos reservados.
         </h3>
+        <div class="footer__contacto">
+            <a href="mailto:felipe12.reina@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-mail">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
+                    <path
+                        d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
+                </svg>
+            </a>
+            <a href="#titulo" class="btn-primario btn-primario--footer">
+                <p>volver arriba</p>
+            </a>
+        </div>
     </footer>
 
 </body>
